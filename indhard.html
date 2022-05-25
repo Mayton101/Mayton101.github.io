@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width">
+        
+        <title>AxiOpa</title>
+    </head>
+    <body>
+        <a href="index.html"></a>
+        <div></div>
+        <div class="listA4">
+            <div class="otst">
+                <img class="stankin" src="img/stankin.png">
+                <h1>МИНОБРНАУКИ РОССИИ<br>
+                    федеральное государственное бюджетное образовательное учреждение<br>
+                    высшего образования<br>
+                     «Московский государственный технологический университет «СТАНКИН»<br>
+                    (ФГБОУ ВО «МГТУ «СТАНКИН»)<br>
+                    ________________________________________________________________
+                    </h1>
+                    <p id="kaf"></p>
+                        <br><br><br><br>
+                    <p id="disc"></p>
+                    <h1 id="number"></h1>
+                    <h1 id="theme"></h1>
+                    <br><br><br><br>
+                    <table>
+                        <tr>
+                            <td>Выполнил:</td>
+                            <td>&nbsp</td>
+                            <td>&nbsp</td>
+                            <td>&nbsp</td>
+                            <td>&nbsp</td>
+                        </tr>
+                        <tr>
+                            <td id="group"></td>
+                            <td>_________</td>
+                            <td>&nbsp</td>
+                            <td>_________</td>
+                            <td id="fios"></td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp</td>
+                            <td>(дата)</td>
+                            <td>&nbsp</td>
+                            <td>(подпись)</td>
+                            <td>&nbsp</td>
+                        </tr>
+                    </table>
+                    <table>
+                        <tr>
+                            <td>Принял:</td>
+                            <td>&nbsp</td>
+                            <td>&nbsp</td>
+                            <td>&nbsp</td>
+                            <td>&nbsp</td>
+                        </tr>
+                        <tr>
+                            <td id="lvl"></td>
+                            <td>_________</td>
+                            <td>&nbsp</td>
+                            <td>_________</td>
+                            <td id="fiop"></td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp</td>
+                            <td>(дата)</td>
+                            <td>&nbsp</td>
+                            <td>(подпись)</td>
+                            <td>&nbsp</td>
+                        </tr>
+                    </table>
+                    <br><br><br><br>
+                    <h1 id="msk"></h1>
+            </div>               
+        </div>
+    </body>
+</html>
+
+<script>
+    var
+    group = decode(getUrlVars()["group"]),
+    fios = decode(getUrlVars()["fios"]),
+    fiop = decode(getUrlVars()["fiop"]),
+    lvl = decode(getUrlVars()["lvl"]),
+    theme = decode(getUrlVars()["theme"]),
+    kaf = decode(getUrlVars()["kaf"]),
+    disc = decode(getUrlVars()["disc"]),
+    number = decode(getUrlVars()["number"]);
+    
+    document.getElementById("kaf").innerHTML = "Институт цифровых интеллектуальных систем<br>Кафедра " + kaf;
+    document.getElementById("theme").innerHTML = theme;
+    document.getElementById("group").innerHTML = "Студент гр. " + group;
+    document.getElementById("fios").innerHTML = fios;
+    document.getElementById("fiop").innerHTML = fiop;
+    document.getElementById("lvl").innerHTML = lvl;
+    document.getElementById("disc").innerHTML = "Образовательная программа 15.03.04<br>«Автоматизация технологических процессов и производств»<br><br>Дисциплина «" + disc + "»<br>";
+    document.getElementById("number").innerHTML = "Отчет<br>по лабораторной работе " + number;
+    document.getElementById("msk").innerHTML = "Москва " + new Date().getFullYear();
+
+    function getUrlVars()
+    {
+        var vars = {};
+        var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) {
+        vars[key] = value;
+        });
+        return vars;
+    }
+
+    function decode(str)
+    {
+        return decodeURI(str).replace(/\+/g, " ").replace(/\%2C/g, ",").replace(/\%3A/g, ":").replace(/\%3B/g, ";").replace(/\%40/g, "@").replace(/\%23/g, "#").replace(/\%24/g, "$").replace(/\%26/g, "&");
+    }
+</script>
+
+<style>
+    body, html
+    {
+        min-height: 150%;
+        width: 100%;
+        margin: 0;
+        font-family: 'Times New Roman';
+        background: linear-gradient(45deg, #ccfffc, #ffe4e4);
+    }
+    .listA4
+    {
+        background: rgb(255, 255, 255);
+        height:297mm;
+        width:210mm;
+        box-shadow: 0 0 40px rgba(0,0,0,0.5);
+        margin: auto;
+    }
+    .logo
+    {
+        width: 15%;
+        margin-left: 5px;
+        margin-top: 5px;
+    }
+    .stankin
+    {
+        width:41mm;
+        display: block;
+        margin: 0 auto;
+    }
+    .otst
+    {
+        padding-top: 20mm;
+        padding-bottom: 20mm;
+        padding-left: 30mm;
+        padding-right: 10mm;
+    }
+    h1, p
+    {
+        font-size: 14pt;
+        text-align: center;
+    }
+    .left
+    {
+        font-size: 14pt;
+        text-align: left;
+    }
+    table
+    {
+        width: 100%;
+        font-size: 14pt;
+    }
+</style>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width">
+        
+        <title>AxiOpa</title>
+    </head>
+    <body>
+        <a href="index.html"></a>
+        <div></div>
+        <div class="listA4">
+            <div class="otst">
+                <h3 align="center">Заполните формы</h3>
+                <form method="GET" name="filter" action="indhard.html">
+                    <ul class="wrapper">
+                      <li class="form-row">
+                        <label for="inp_1">Группа:</label>
+                    <input type="text" name="group" id="inp_1">
+                      </li>
+                      <li class="form-row">
+                        <label for="inp_2">ФИО студента:</label>
+                    <input type="text" name="fios" id="inp_2">
+                      </li>
+                      <li class="form-row">
+                        <label for="inp_3">ФИО преподавателя:</label>
+                    <input type="text" name="fiop" id="inp_3">
+                      </li>
+                      <li class="form-row">
+                        <label for="inp_4">Ученая степень преподавателя:</label>
+                    <input type="text" name="lvl" id="inp_4">
+                    </li>
+                    <li class="form-row">
+                        <label for="inp_5">Тема лабораторной работы:</label>
+                    <input type="text" name="theme" id="inp_5">
+                    </li>
+                    <li class="form-row">
+                        <label for="inp_6">Кафедра:</label>
+                    <input type="text" name="kaf" id="inp_6">
+                    </li>
+                    <li class="form-row">
+                        <label for="inp_7">Дисциплина:</label>
+                    <input type="text" name="disc" id="inp_7">
+                    </li>
+                    <li class="form-row">
+                        <label for="inp_8">Номер лабораторной работы:</label>
+                    <input type="text" name="number" id="inp_8">
+                    </li>
+                      <li class="form-row">
+                        <button type="submit">Сгенерировать титульный лист</button>
+                      </li>
+                    </ul>
+                  </form>
+            </div>               
+        </div>
+    </body>
+</html>
+
+<style>
+    body, html
+    {
+        min-height: 150%;
+        width: 100%;
+        margin: 0;
+        font-family: 'Times New Roman';
+        background: linear-gradient(45deg, #ccfffc, #ffe4e4);
+    }
+    .listA4
+    {
+        background: rgb(255, 255, 255);
+        height:297mm;
+        width:210mm;
+        box-shadow: 0 0 40px rgba(0,0,0,0.5);
+        margin: auto;
+    }
+    .logo
+    {
+        width: 15%;
+        margin-left: 5px;
+        margin-top: 5px;
+    }
+    .stankin
+    {
+        width:41mm;
+        display: block;
+        margin: 0 auto;
+    }
+    .otst
+    {
+        padding-top: 20mm;
+        padding-bottom: 20mm;
+        padding-left: 30mm;
+        padding-right: 10mm;
+    }
+    h1
+    {
+        font-size: 14pt;
+        text-align: center;
+    }
+    .wrapper
+    {
+        background-color: #ffffff;
+        list-style-type: none;
+        padding: 0;
+        border-radius: 3px;
+    }
+    .form-row
+    {
+        display: flex;
+        justify-content: flex-end;
+        padding: .5em;
+    }
+    .form-row > label
+    {
+        padding: .5em 1em .5em 0;
+    }
+    .form-row > input
+    {
+        flex: 1;
+    }
+    .form-row > input, .form-row > button
+    {
+        padding: .5em;
+    }
+    .form-row > button
+    {
+        background: gray;
+        color: white;
+        border: 0;
+    }
+    </style>

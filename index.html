@@ -10,11 +10,51 @@
     <body>
         <body bgcolor=f2e8d8></body>
         <div class="tab">
-            <button class="tablinks" onclick="openchat(event, 'Gus')">Gus</button>
-            <button class="tablinks" onclick="openchat(event, 'Hydra')">Hydra</button>
-            <button class="tablinks" onclick="openchat(event, 'Bogdan')">Bogdan</button>
-            <button class="tablinks" onclick="openchat(event, 'AxiOpa')">AxiOpa</button>
-            <button class="tablinks" onclick="openchat(event, 'Photos')">Photos</button>
+            <button class="tablinks" onclick="Tabs(event, 'Resume')">Резюме</button>
+            <button class="tablinks" onclick="Tabs(event, 'Chats')">Пасты</button>
+            <button class="tablinks" onclick="Tabs(event, 'Labas')">Лабы</button>
+            <button class="tablinks" onclick="Tabs(event, 'Actions')">Мероприятия</button>
+            
+        </div>
+        <div id="Labas" class="tabcontent">
+            <button class="tablinks" onclick="Tabs(event, 'OOP')">ООП</button>
+            <button class="tablinks" onclick="Tabs(event, 'UAP')">УАП</button>
+            <button class="tablinks" onclick="Tabs(event, 'OSPO')">ОСПО</button>
+        </div>
+        <div id="UAP" class="tabcontent">
+            <h3>Управление в автоматизированном производстве</h3>
+            <b>
+                <center>Лабораторная работа 1</center>
+                <iframe src="https://drive.google.com/file/d/1bqfwMR_59KCN8TJdsMx-T-pyJ4fh-_ap/preview" width="100%" height="900" allow="autoplay"></iframe>
+                <center>Лабораторная работа 2</center>
+                <iframe src="https://drive.google.com/file/d/1eNkDbCx87V8dwtCMxvlEWTygkLe057Gr/preview" width="100%" height="900" allow="autoplay"></iframe>
+                <center>Лабораторная работа 3</center>
+                <iframe src="https://drive.google.com/file/d/1QNPF97qadk_Ga2EFCt8FOUS45rIpqSE_/preview" width="100%" height="900" allow="autoplay"></iframe>
+                
+            </b>
+            
+        </div>
+        <div id="OOP" class="tabcontent">
+            <h3>Объектно ориентированное проектирование</h3>
+            <b>
+                <center>Лабораторная работа 1</center>
+                <iframe src="https://drive.google.com/file/d/17ahKrpm73ekGaDr8OSTz7_dnxKz0WrX7/preview" width="100%" height="900" allow="autoplay"></iframe>
+                <center>Лабораторная работа 2</center>
+                <iframe src="https://drive.google.com/file/d/19HgUHbf9ISpeUrt1SITn_qZsI3OVJl5B/preview" width="100%" height="900" allow="autoplay"></iframe>
+                <center>Лабораторная работа 3</center>
+                <iframe src="https://drive.google.com/file/d/173_WLRS-_DFowcboPdq3ybw08lcPGPxA/preview" width="100%" height="900" allow="autoplay"></iframe>
+                
+            </b>
+            
+        </div>
+        <div id="OSPO" class="tabcontent">  
+                <p>&#8226 <a class="a" href="forms.html">Генератор титульного листа МГТУ "СТАНКИН"</a></p>     
+        </div>
+        <div id="Chats" class="tabcontent">
+            <button class="tablinks" onclick="Tabs(event, 'Gus')">Gus</button>
+            <button class="tablinks" onclick="Tabs(event, 'Hydra')">Hydra</button>
+            <button class="tablinks" onclick="Tabs(event, 'Bogdan')">Bogdan</button>
+            <button class="tablinks" onclick="Tabs(event, 'AxiOpa')">AxiOpa</button>
         </div>
         <div id="Gus" class="tabcontent">
             <h3>Gus</h3>
@@ -32,6 +72,8 @@
             <h3>Bogdan</h3>
             <b>
                 <center>░░▄███████▀▀▀▀▀▀███████▄<br>░▐████▀▒ЗАПУСКАЕМ▒▀██████▄<br>░███▀▒▒▒▒▒ДЯДЮ▒▒▒▒▒▒▀█████<br>░▐██▒▒▒▒▒▒БОГДАНА▒▒▒▒▒████▌<br>░▐█▌▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒████▌<br>░░█▒▄▀▀▀▀▀▄▒▒▄▀▀▀▀▀▄▒▐███▌<br>░░░▐░░░▄▄░░▌▐░░░▄▄░░▌▐███▌<br>░▄▀▌░░░▀▀░░▌▐░░░▀▀░░▌▒▀▒█▌<br>░▌▒▀▄░░░░▄▀▒▒▀▄░░░▄▀▒▒▄▀▒▌<br>░▀▄▐▒▀▀▀▀▒▒▒▒▒▒▀▀▀▒▒▒▒▒▒█<br>░░░▀▌▒▄██▄▄▄▄████▄▒▒▒▒█▀<br>░░░░▄██████████████▒▒▐▌<br>░░░▀███▀▀████▀█████▀▒▌<br>░░░░░▌▒▒▒▄▒▒▒▄▒▒▒▒▒▒▐<br>░░░░░▌▒▒▒▒▀▀▀▒▒▒▒▒▒▒▐<br></center>
+            <center>Напоминает серию в симпсонах где фландерсу дом построили,<br> а он сужался. Он чем дальше шёл по коридору,<br> тем уже становился дом и в конце рухнул.<br> Помните, малые?</center>
+            <center><img class="myImg" src="Flanders.jpg" >  </center>  
             </b>
         </div>
         <div id="AxiOpa" class="tabcontent">
@@ -40,13 +82,76 @@
                 <center>AxiOpa</center>               
                 <center><img class="myImg" src="axioma.PNG">  </center>  
             </b>
+
         </div>
-        <div id="Photos" class="tabcontent">
-            <h3>Photos</h3>
-            <div class="slider">
+        <div id="Actions" class="tabcontent">
+            <h3>Мероприятия с моим участием</h3>
+            <b>
+                <p>&#8226 <a class="a" href="https://vk.com/album-152951271_284463099">День победы 2022</a></p>
+                <p>&#8226 <a class="a" href="https://vk.com/album-152951271_284172363">День открытых дверей 23.04.22</a></p>
+                <p>&#8226 <a class="a" href="https://vk.com/album-152951271_284175739">#МыВМесте 30.03.22</a></p>
+                <p>&#8226 <a class="a" href="https://vk.com/album-152951271_284175721">28 Мараля 17.03.22</a></p>
+                <p>&#8226 <a class="a" href="https://vk.com/album-152951271_282914343">Студенческий новый год 2022</a></p>
+                <p>&#8226 <a class="a" href="https://vk.com/album-152951271_282456979">Детский новый год 2021</a></p>
+                <p>&#8226 <a class="a" href="https://vk.com/album-152951271_282390676">Открытие сезона 01.12.21</a></p>
+                <p>&#8226 <a class="a" href="https://vk.com/album-152951271_281964792">Кубок перокурсника 2021</a></p>
+                <p>&#8226 <a class="a" href="https://vk.com/album-152951271_281161094">Посвящение в студенты 2021</a></p>
+                <p>&#8226 <a class="a" href="https://vk.com/album-152951271_279499300">Юбилей Шоу-Студии "Тип-Топ" 45</a></p>
+                <p>&#8226 <a class="a" href="https://vk.com/album-152951271_279182968">28 Мараля 2021</a></p>
+                <p>&#8226 <a class="a" href="https://vk.com/album-152951271_275409383">Посвящение в студенты 2020</a></p>
+                <p>&#8226 <a class="a" href="https://vk.com/album-152951271_275405061">Станкин 90 Лет</a></p>
+                <p>&#8226 <a class="a" href="https://vk.com/album-152951271_271767068">Студенческий Новый год 2020</a></p>
+                <p>&#8226 <a class="a" href="https://vk.com/album-152951271_269623403">Детский новый год 2019</a></p>
+                <p>&#8226 <a class="a" href="https://vk.com/album-152951271_269621555">Новый год по Станкиновски 2019</a></p>
+                <p>&#8226 <a class="a" href="https://vk.com/album-152951271_269361650">День институтов 2019</a></p>
+                <p>&#8226 <a class="a" href="https://vk.com/album-152951271_269164179">Открытие сезона 2019</a></p>
+
+
+            </b>
+        </div>
+        <div id="Resume" class="tabcontent">
+            <h3>Резюме</h3>
+            <b>
                 
-                
-            
+                <div class="list">
+                    <div class="part1">
+                        <br><h3 id="fio" align="center">Родин Алексей Михайлович</h3>
+                        
+                        <p></p>
+                    </div>
+                        <h4 align="center">О себе</h4>
+                        <div class="part1">
+                            <div class="part3"><img class="photo" src="img/Lexa2.jpg"></div>
+                            <div class="part4"><p align="justify">&nbsp&nbsp&nbsp&nbspЗаканчиваю 3-й курс МГТУ "Станкин", 
+                                изучаю HTML, CSS, JavaScript, PHP, C#. Знаю C, C++, MySQL.<br>
+                                Отлично играю на бас гитаре, обладаю большим опытом выступлений на публику и минимально допустимыми навыками отстройки звука на мероприятиях.<br>
+                                Знаю что такое "Прострел", "Портал", "Линия света", "Бимы", "Прессволл" и многое другое<br>
+                            </div>
+                        </div>
+                    
+                    <div class="part1">
+                        <h4 align="center">Образование</h4>
+                        <p> Уровень образования: неоконченное высшее</p>
+                        <p align="justify"> ВУЗ: Московский Государственный Технологический Университет "СТАНКИН".<br> 
+                            Институт Цифровых и Интеллектуальных Систем.<br> Кафедра Компьютерных Систем Управления.<br> 
+                            Автоматизация технологических процессов и производств.<br></p>
+                    </div>
+                    <div class="part1">
+                        <h4 align="center">Опыт работы</h4>
+                        <p>&#8226 Большой</p>
+                    </div>
+                    <div class="part2">
+                        <h4 align="center">Контакты</h4>
+                        <p>&#8226 <a class="a" href="https://github.com/Mayton101">GitHub</a></p>
+                        <p>&#8226 Почта: mayton10101@gmail.com</a></p>
+                        <p>&#8226 Телефон: +7-(964)-775-01-92<br>&nbsp</p>
+                    </div>
+                </div>
+                <footer>
+                    <button type="button" class="ghost-button" onclick="changefio()">Изменить ФИО</button>
+                  </footer>
+            </b>
+
 
         </div>
         
@@ -97,13 +202,119 @@
 img {
   width: 100%;  ;
 }
-/
+
+.part1{
+    border-bottom: 5px solid #000000;
+        margin-left: 10%;
+        margin-right: 10%;
+}
+.part2{
+    margin-left: 10%;
+    margin-right: 10%;
+    display: block;
+}
+.part3{
+    display: inline-block;
+      width: 30%;
+      margin-bottom: 20px;
+      padding-left: 5px;
+}
+    h3
+    {
+        margin-bottom: -12px;
+    }
+    body, html
+    {
+        min-height: 150%;
+        width: 100%;
+        margin: 0;
+        font-family: 'Trebuchet MS';
+        background: linear-gradient(45deg, #ccfffc, #ffe4e4);
+    }
+    .list
+    {
+        background: rgb(255, 255, 255);
+        width: 80%;
+        box-shadow: 0 0 40px rgba(0,0,0,0.5);
+        margin: auto;
+        margin-bottom: 50px;
+    }
+    .logo
+    {
+        width: 15%;
+        margin-left: 5px;
+        margin-top: 5px;
+    }
+    .photo
+    {
+      width: 100%;
+      outline: 3px solid #000000;
+    }
+    .part1
+    {
+        border-bottom: 5px solid #000000;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    .part2
+    {
+        margin-left: 10%;
+        margin-right: 10%;
+        display: block;
+    }
+    .part3
+    {
+      display: inline-block;
+      width: 30%;
+      margin-bottom: 20px;
+      padding-left: 5px;
+    }
+    .part4
+    {
+      display: inline-block;
+      width: 67%;
+      float: right;
+    }
+    .a
+    {
+        text-decoration: none;
+        color: #0f7afc;
+        border-bottom: 1px solid;
+        border-bottom-color: rgba(15, 122, 252, 0.2);
+    }
+    .a:hover
+    {
+        text-decoration: none;
+        color: #a8edea;
+        border-bottom-color: #a8edea;
+    }
+    h3
+    {
+        margin-bottom: -12px;
+    }
+    .ghost-button
+    {
+        display: inline-block;
+        width: 200px;
+        padding: 8px;
+        background-color: rgba(0, 0, 0, 0);
+        border: none;
+        color:rgb(139, 139, 139);
+        text-align: center;
+        outline: none;
+        text-decoration: none;
+    }
+    .ghost-button:hover, .ghost-button:active
+    {
+        background-color: rgba(255, 255, 255, 0.233);
+        color: rgb(139, 139, 139);
+    }
 </style>
 
 
 <script>
     /*Вкладки*/
-    function openchat(evt, cityName) {
+    function Tabs(evt, cityName) {
     var i, tabcontent, tablinks;
 
     tabcontent = document.getElementsByClassName("tabcontent");
@@ -119,6 +330,15 @@ img {
     document.getElementById(cityName).style.display = "block";
     evt.currentTarget.className += " active";
 }
-/* Слайдер*/
+
+function changefio()
+{
+    if (confirm('Вы уверены, что хотите поменять ФИО в резюме?'))
+    {
+        var fio = prompt('Введите ФИО','');
+    }
+    alert("Готово.")
+    document.getElementById("fio").innerHTML = fio;
+}
 
 </script>
